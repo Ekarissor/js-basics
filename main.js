@@ -1,8 +1,8 @@
-// JS CLASSIC SHIT
-// console.log("Hello, World!");
-// document.body.innerHTML += "<h1>Hello world !</h1>";
-// var greetingsDiv = document.querySelector("#greetings");
-// greetingsDiv.innerHTML = "<h1>Hello world !</h1>";
+// HELLO WORLD
+console.log("Hello, World!");
+document.body.innerHTML += "<h1>Hello world !</h1>";
+var greetingsDiv = document.querySelector("#greetings");
+greetingsDiv.innerHTML = "<h1>Hello world !</h1>";
 
 
 // LISTE DE NOMS
