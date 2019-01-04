@@ -59,31 +59,31 @@ students.forEach(function (student) {
     document.querySelector("#studentList").innerHTML += `<li>${student}</li>`;
 })
 
-// IMAGE IS COMING //
-// var button = document.querySelector("#button");
-// var emile = document.querySelector("#image");
-// var button2 = document.querySelector("#button2");
-// var image = document.querySelector("#image2");
+// IMAGE
+var click = document.querySelector("#click");
+var image = document.querySelector("#image");
+var click2 = document.querySelector("#click2");
+var image2 = document.querySelector("#image2");
 
-// button.addEventListener("click", function (event) {
-//      fetch("https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png")
-//         .then(response => response.blob())
-//         .then(function (myBlob) {
-//             var objectURL = URL.createObjectURL(myBlob);
-//             emile.src = objectURL;
-//             emile.alt = "Logo Wikipédia";
-//         });
-// });
+click.addEventListener("click", function (event) {
+     fetch("https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png")
+        .then(response => response.blob())
+        .then(function (myBlob) {
+            var objectURL = URL.createObjectURL(myBlob);
+            image.src = objectURL;
+            image.alt = "Logo Wikipédia";
+        });
+});
 
-// button2.addEventListener("click", function (event) {
-//     fetch("https://vignette.wikia.nocookie.net/finalfantasy/images/e/e3/Ff8-squall2.jpg/revision/latest?cb=20100604071440")
-//        .then(response => response.blob())
-//        .then(function (myBlob) {
-//            var objectURL = URL.createObjectURL(myBlob);
-//            image.src = objectURL;
-//            image.alt = "Squall";
-//        });
-// });
+click2.addEventListener("click", function (event) {
+    fetch("https://vignette.wikia.nocookie.net/finalfantasy/images/e/e3/Ff8-squall2.jpg/revision/latest?cb=20100604071440")
+       .then(response => response.blob())
+       .then(function (myBlob) {
+           var objectURL = URL.createObjectURL(myBlob);
+           image2.src = objectURL;
+           image2.alt = "Squall";
+       });
+});
 
 // LIST CARD
 // var students = [];
