@@ -53,9 +53,9 @@ function chess() {
 };
 
 // REVERSE
-var students = ["Alexandre", "Béatrice", "Benoît", "Émeric", "Florian", "Gwenaëlle", "Jérémy", "Johan", "Justine M", "Justine P", "Justine T", "Kévin", "Loïc", "Mathieu", "Matthias", "Rémi", "Samuel", "Sébastien", "Sullivan", "Thomas", "Tiffany", "Valentin", "Yann"];
-students.sort().reverse();
-students.forEach(function (student) {
+var student = ["Alexandre", "Béatrice", "Benoît", "Émeric", "Florian", "Gwenaëlle", "Jérémy", "Johan", "Justine M", "Justine P", "Justine T", "Kévin", "Loïc", "Mathieu", "Matthias", "Rémi", "Samuel", "Sébastien", "Sullivan", "Thomas", "Tiffany", "Valentin", "Yann"];
+student.sort().reverse();
+student.forEach(function (student) {
     document.querySelector("#studentList").innerHTML += `<li>${student}</li>`;
 })
 
@@ -86,23 +86,23 @@ click2.addEventListener("click", function (event) {
 });
 
 // LIST CARD
-// var students = [];
-// var list = document.querySelector("#studentsList");
+var students = [];
+var list = document.querySelector("#studentsList");
 
-// fetch("http://api-students.popschool-lens.fr/students.json")
-// .then(response => response.json())
-// .then(function (response) {
-//     students = response.students
-//     students.forEach(function(student) {
-//         list.innerHTML += `<div class="card" style="width: 18rem;">
-//         <div class="card-body">
-//           <h5 class="card-title">${student.firstname}</h5>
-//           <p class="card-text">${student.lastname}, ${student.sex}</p>
-//           <a href="#" class="btn btn-primary">Supprimer</a>
-//         </div>
-//       </div>`
-//     });
-// });
+fetch("http://api-students.popschool-lens.fr/students.json")
+.then(response => response.json())
+.then(function (response) {
+    students = response.students
+    students.forEach(function(student) {
+        list.innerHTML += `<div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${student.firstname}</h5>
+          <p class="card-text">${student.lastname}, ${student.sex}</p>
+          <a href="#" class="btn btn-primary">Supprimer</a>
+        </div>
+      </div>`
+    });
+});
 
 // EL FAMASO VIBRATOR //
 // var button = document.querySelector("#button");
