@@ -4,35 +4,17 @@ document.body.innerHTML += "<h1>Hello world !</h1>";
 var greetingsDiv = document.querySelector("#greetings");
 greetingsDiv.innerHTML = "<h1>Hello world !</h1>";
 
+// ADDITION
+var button =  document.querySelector("#button");
+var input1 = document.querySelector("#input1");
+var input2 = document.querySelector("#input2");
+var result = document.querySelector("#result");
+button.addEventListener("click", addition);
+function addition(event) {
+	result.value = parseInt(input1.value) + parseInt(input2.value);
+}
 
-// LISTE DE NOMS
-// var students = ["Alexandre","Béatrice","Benoît","Émeric","Florian","Gwenaëlle","Jérémy","Johan","Justine M","Justine P","Justine T","Kévin","Loïc","Mathieu","Matthias","Rémi","Samuel","Sébastien","Sullivan","Thomas","Tiffany","Valentin","Yann"];
-//  students.forEach(function(student) {
-//    document.querySelector("#studentList").innerHTML += `<li>${student}</li>`;
-// })
 
-// CLICK BUTTON
-// function loadStyle(event) {
-//     if(event.target.className == "") {
-//         event.target.className = "dynamicStyle";
-//     }
-//     else {
-//         event.target.className = "";
-//     }
-// }
-// document.querySelector("main").addEventListener("click", loadStyle);
-
-// EXERCICE 1 ADDITION
-// var button =  document.querySelector("#button");
-// var champ1 = document.querySelector("#input1");
-// var champ2 = document.querySelector("#input2");
-// var result = document.querySelector("#result");
-
-// button.addEventListener("click", addition);
-
-// function addition(event) {
-// 	result.value = parseInt(champ1.value) + parseInt(champ2.value);
-// }
 
 // EXERCICE 2 CUMUL/MOYENNE
 // var button =  document.querySelector("#button");
