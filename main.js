@@ -40,18 +40,18 @@ function execute(event) {
 }
 btn.addEventListener("click", execute);
 
-// EXERCICE 3 DAMIER
+// DAMIER
+var createdam = document.querySelector("#createdam");
+var damier = document.querySelector("#damier");
 
-// var button = document.querySelector("#button");
-// var damier = document.querySelector("#damier");
+createdam.addEventListener("click", chess);
 
-// button.addEventListener("click", porn);
+function chess() {
+    for (var i=0; i < 81; i++) {
+        damier.innerHTML += `<div class="square"></div>`
+    }
+};
 
-// function porn() {
-//     for (var i=0; i < 81; i++) {
-//         damier.innerHTML += `<div class="square"></div>`
-//     }
-// };
 
 // EXERCICE 4 REVERSE
 
