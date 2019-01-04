@@ -5,18 +5,18 @@ var greetingsDiv = document.querySelector("#greetings");
 greetingsDiv.innerHTML = "<h1>Hello world !</h1>";
 
 // ADDITION
-var button =  document.querySelector("#button");
+var button = document.querySelector("#button");
 var input1 = document.querySelector("#input1");
 var input2 = document.querySelector("#input2");
 var result = document.querySelector("#result");
 button.addEventListener("click", addition);
 
 function addition(event) {
-	result.value = parseInt(input1.value) + parseInt(input2.value);
+    result.value = parseInt(input1.value) + parseInt(input2.value);
 }
 
 // CUMUL/MOYENNE
-var btn =  document.querySelector("#btn");
+var btn = document.querySelector("#btn");
 var data = document.querySelector("#data");
 var cumul = document.querySelector("#cumul");
 var moyen = document.querySelector("#moyen");
@@ -27,10 +27,10 @@ function add(event) {
 }
 function total(event) {
     var sum = 0;
-    tableau.forEach(function(t) {
+    tableau.forEach(function (t) {
         sum += t;
     });
-    moyen.value = sum/tableau.length;
+    moyen.value = sum / tableau.length;
 
     return sum;
 }
@@ -47,32 +47,17 @@ var damier = document.querySelector("#damier");
 createdam.addEventListener("click", chess);
 
 function chess() {
-    for (var i=0; i < 81; i++) {
+    for (var i = 0; i < 81; i++) {
         damier.innerHTML += `<div class="square"></div>`
     }
 };
 
-
-// EXERCICE 4 REVERSE
-
-// var students = ["Alexandre","Béatrice","Benoît","Émeric","Florian","Gwenaëlle","Jérémy","Johan","Justine M","Justine P","Justine T","Kévin","Loïc","Mathieu","Matthias","Rémi","Samuel","Sébastien","Sullivan","Thomas","Tiffany","Valentin","Yann"];
-// students.sort().reverse();
-// students.forEach(function(student) {
-//     document.querySelector("#studentList").innerHTML += `<li>${student}</li>`;
-// })
-
-// BASIC CONSOLE //
-// var alexandre = { firstname: "Alexandre", lastname: "Briffaut", birthday: "24/08/91"}
-// console.log(alexandre.firstname + " " + alexandre.lastname);
-// alexandre.hello = function() {
-//     console.log(`Hello my name is ${this.firstname} and I'm born the ${this.birthday}`)
-// }
-// alexandre.hello()
-// var alexandre = { firstname: "Alexandre", lastname: "Briffaut" }
-// console.log(JSON.stringify(alexandre))
-
-// var JSONText  = `{ "firstname": "Adolf", "lastname": "Hitler" }`
-// console.log(JSON.parse(JSONText))
+// REVERSE
+var students = ["Alexandre", "Béatrice", "Benoît", "Émeric", "Florian", "Gwenaëlle", "Jérémy", "Johan", "Justine M", "Justine P", "Justine T", "Kévin", "Loïc", "Mathieu", "Matthias", "Rémi", "Samuel", "Sébastien", "Sullivan", "Thomas", "Tiffany", "Valentin", "Yann"];
+students.sort().reverse();
+students.forEach(function (student) {
+    document.querySelector("#studentList").innerHTML += `<li>${student}</li>`;
+})
 
 // IMAGE IS COMING //
 // var button = document.querySelector("#button");
