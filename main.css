@@ -1,0 +1,36 @@
+/* BUTTON CLICK */
+/* .dynamicStyle {
+    background-color: black;
+}
+
+main {
+    height: 200px;
+    width: 200px;
+    border: solid 2px;
+} */
+/* END */
+
+/* DAMIER */
+/* .square {
+    height: 50px;
+    width: 50px;
+}
+
+.square:nth-child(even) {
+    background-color: black;
+}
+.square:nth-child(odd) {
+    background-color: lightpink;
+}
+
+#damier {
+    display: flex;
+    width: 450px;
+    flex-flow: wrap;
+} */
+/* END */
+
+#studentsList {
+    display: flex;
+    flex-wrap: wrap;
+} 
