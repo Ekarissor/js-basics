@@ -10,38 +10,35 @@ var input1 = document.querySelector("#input1");
 var input2 = document.querySelector("#input2");
 var result = document.querySelector("#result");
 button.addEventListener("click", addition);
+
 function addition(event) {
 	result.value = parseInt(input1.value) + parseInt(input2.value);
 }
 
+// CUMUL/MOYENNE
+var btn =  document.querySelector("#btn");
+var data = document.querySelector("#data");
+var cumul = document.querySelector("#cumul");
+var moyen = document.querySelector("#moyen");
+var tableau = [];
 
+function add(event) {
+    tableau.push(parseInt(data.value));
+}
+function total(event) {
+    var sum = 0;
+    tableau.forEach(function(t) {
+        sum += t;
+    });
+    moyen.value = sum/tableau.length;
 
-// EXERCICE 2 CUMUL/MOYENNE
-// var button =  document.querySelector("#button");
-// var data = document.querySelector("#data");
-// var cumul = document.querySelector("#cumul");
-// var moyen = document.querySelector("#moyen");
-// var tableau = [];
-
-// CUMUL MOYENNE //
-
-// function add(event) {
-//     tableau.push(parseInt(data.value));
-// }
-// function total(event) {
-//     var sum = 0;
-//     tableau.forEach(function(t) {
-//         sum += t;
-//     });
-//     moyen.value = sum/tableau.length;
-
-//     return sum;
-// }
-// function execute(event) {
-//     add();
-//     cumul.value = total();
-// }
-// button.addEventListener("click", execute);
+    return sum;
+}
+function execute(event) {
+    add();
+    cumul.value = total();
+}
+btn.addEventListener("click", execute);
 
 // EXERCICE 3 DAMIER
 
