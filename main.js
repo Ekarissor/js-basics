@@ -104,13 +104,13 @@ fetch("http://api-students.popschool-lens.fr/students.json")
     });
 });
 
-// EL FAMASO VIBRATOR //
-// var button = document.querySelector("#button");
+// MOBILE VIBRATE
+var btnvibrate = document.querySelector("#btnvibrate");
 
-// function vibrate (){
-//   navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100])
-// }
-// button.addEventListener("click", vibrate);
+function vibrate (){
+  navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100])
+}
+btnvibrate.addEventListener("click", vibrate);
 
 
 // XVIDEO //
